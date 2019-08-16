@@ -1,0 +1,19 @@
+.summary-container {
+    /* background-color: #8C43FF; */
+    background-color: #cbcbd3;
+    
+}
+
+.summary-content {
+    padding: 5em 20em 5em 20em; 
+    /* color: #293347; */
+    color: white;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+}
+
+.is-hr-summary{
+
+    width:20%;
+    border-top: 1px solid white;
+}

@@ -1,0 +1,52 @@
+.grid-container {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25px;
+  grid-gap: 20px;
+  height: 100%;
+}
+.NavContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3em;
+  width:100%;
+  position: -webkit-sticky; /* Safari & IE */
+  top: 0;
+  z-index: 2;
+  /* Firefox */
+  -moz-transition: all 0.5s ease-in;
+  /* WebKit */
+  -webkit-transition: all 0.5s ease-in;
+  /* Opera */
+  -o-transition: all 0.5s ease-in;
+  /* Standard */
+  transition: all 0.5s ease-in;
+}
+.NavigationTabAnchor {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: black;
+}
+.NavBarAnchorContainer {
+  margin: 0 auto;
+}
+.titles {
+  font-family: "Crete Round", serif;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: red;
+}
