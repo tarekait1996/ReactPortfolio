@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="all">
       <NavigationBar />
-      <div className="DisplayLayout">
-        <LandingLayout />
-      </div>
+      <LandingLayout />
       <div className = "whiteDiv">
       </div>
       <Summary/>
@@ -21,10 +19,10 @@ function App() {
        skillSubTitle="Platform I am familiar with"
        skillSubTitle2="Languages I speak"/>
 
-       <SkillBox title="Web Development"
+       {/* <SkillBox title="Web Development"
        mainDescription="I value beautiful UI, UX and specifically clean code and architecture inside a Website." 
        skillSubTitle="Platform I am familiar with"
-       skillSubTitle2="Languages I speak"/>
+       skillSubTitle2="Languages I speak"/> */}
        </div>
     </div>
   );

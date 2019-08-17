@@ -1,10 +1,14 @@
 .container {
     text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     font-family: 'Crete Round', serif;
     margin-top: 50px;
+    position: relative;
+    height: 95vh;
+}
+.centeredContainer{
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
 }
 .title {
     font-size: 70px;
@@ -21,7 +25,9 @@
     color: white;
 }
 .bottomDiv{
-    bottom: 0;
+    position: absolute;
+    bottom: 5px;;
+    left: 50%;
 }
 
 hr { 

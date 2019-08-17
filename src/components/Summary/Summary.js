@@ -11,7 +11,11 @@ export default class Summary extends React.Component  {
                     <p> I am a software engineer student at Concordia University who enjoys coding. 
                         I completed two work term during my bacheaulor which gave me hands on experience
                         with Android and IOS mobile development. I'm dependablem naturally curious and always
-                         looking for new challenges and opportunity. </p>
+                         looking for new challenges and opportunity. 
+                         I am a software engineer student at Concordia University who enjoys coding. 
+                        I completed two work term during my bacheaulor which gave me hands on experience
+                        with Android and IOS mobile development. I'm dependablem naturally curious and always
+                         looking for new challenges and opportunity.</p>
                 </div>
             </section>
         );

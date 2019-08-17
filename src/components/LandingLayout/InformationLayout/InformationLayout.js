@@ -8,12 +8,13 @@ export default class InformationLayout extends React.Component {
     return (
       <div className="container">
       {/* <img src={pic} alt="logo"/> */}
-      <h1 className="title">
-        <Typist blink = "true">
-            <span>I am Tarek Ait Hamouda.</span>
-            <Typist.Backspace count={23} delay={600} />
-            <span>Just call me Tarek.</span>
-        </Typist>
+      <div className="centeredContainer">
+        <h1 className="title">
+          <Typist blink = "true">
+              <span>I am Tarek Ait Hamouda.</span>
+              <Typist.Backspace count={23} delay={600} />
+              <span>Just call me Tarek.</span>
+          </Typist>
         </h1>
         <div className="description-Container">
           <p className="description">
@@ -29,11 +30,12 @@ export default class InformationLayout extends React.Component {
             <a href = "https://www.pictame.com/user/tarekait96/15069466132"><i className="fab fa-instagram"></i></a>
             <a href = "https://twitter.com/tarekaithamouda"><i className="fab fa-twitter"></i></a>
         </div>
-        <div className="bottomDiv">
-          <a href = "/">
-            <i className="fas fa-chevron-down" />
-          </a>
-        </div>
+      </div>
+      <div className="bottomDiv">
+        <a href = "/">
+          <i className="fas fa-chevron-down" />
+        </a>
+      </div>
       </div>
     );
   }
