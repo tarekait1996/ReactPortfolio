@@ -12,7 +12,6 @@
   top: 0;
   left: 0;
   height: 3em;
-  width:100%;
   position: -webkit-sticky; /* Safari & IE */
   top: 0;
   z-index: 2;
@@ -49,4 +48,17 @@ a:visited {
 
 a:hover {
   color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .NavBarAnchorContainer {
+    display: none;
+  }
+  .NavBarBurgerMenu {
+    display:block;
+    text-align: right;
+  }
+}
+.NavBarBurgerMenu {
+  display:block;
 }

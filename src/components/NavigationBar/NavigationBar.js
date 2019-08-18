@@ -26,6 +26,8 @@ export default class NavigationBar extends React.Component {
                     <div className = "NavBarAnchorContainer"><a className = "titles NavigationTabAnchor" href="/">Experience</a></div>
                     <div className = "NavBarAnchorContainer"><a className = "titles NavigationTabAnchor" href="/">Portfolio</a></div>
                     <div className = "NavBarAnchorContainer"><a className = "titles NavigationTabAnchor" href="/">Contact me</a></div>
+                    <div className = "NavBarBurgerMenu"><a className = "titles NavigationTabAnchor" href="/"><i class="fas fa-bars"></i></a></div>
+                    
                     
                 </nav>
             </div>
