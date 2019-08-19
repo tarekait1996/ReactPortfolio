@@ -15,7 +15,7 @@ function App() {
       <LandingLayout />
       <div className="whiteDiv">
         <Summary />
-        <div className="skillBox-wrapper">
+        {/* <div className="skillBox-wrapper">
           <SkillBox
             title="Mobile Development"
             mainDescription="I value beautiful UI, UX and specifically clean code and architecture inside a native mobile App."
@@ -23,13 +23,12 @@ function App() {
             skillSubTitle2="Languages I speak"
           />
 
-          {/* <SkillBox title="Web Development"
+          <SkillBox title="Web Development"
        mainDescription="I value beautiful UI, UX and specifically clean code and architecture inside a Website." 
        skillSubTitle="Platform I am familiar with"
-       skillSubTitle2="Languages I speak"/> */}
-        </div>
+       skillSubTitle2="Languages I speak"/>
+        </div> */}
         <Experience />
-        <Projects />
         <Actuality />
       </div>
     </div>

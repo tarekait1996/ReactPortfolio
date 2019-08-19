@@ -1,6 +1,6 @@
 .grid-container {
   max-width: 1200px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
@@ -31,10 +31,11 @@
   color: black;
 }
 .NavBarAnchorContainer {
+  display:flex;
   margin: 0 auto;
 }
 .titles {
-  font-family: "Crete Round", serif;
+  display: flex;
   color: black;
 }
 
@@ -60,7 +61,6 @@ a:hover {
   background-color: black;
   color: white;
   font-size: 2em;
-  font-family: 'Abril Fatface', cursive;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s; /* Firefox < 16 */
    -ms-animation: fadein 1s; /* Internet Explorer */
