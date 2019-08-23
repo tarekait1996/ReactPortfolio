@@ -1,0 +1,28 @@
+.circle-avatar{
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+}
+.recommendation-container{
+    padding: 20px;
+    max-width: 300px;
+    max-height: 450px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 20px 20px 20px 20px rgba(0,0,0,.1);
+
+}
+
+.recommendation-content{
+    margin: 0 auto;
+    height: 100%;
+    padding: 10px;
+}
+.recommendation-paragraph {
+    text-align: center;
+    font-size: 15px;
+}
+.recommendation-information{
+    position: relative;
+    bottom: 0;
+}

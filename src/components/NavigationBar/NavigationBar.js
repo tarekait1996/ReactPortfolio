@@ -17,9 +17,9 @@ export default class NavigationBar extends React.Component {
 
   listenScrollEvent = e => {
     if (window.scrollY > 200) {
-      this.setState({ color: "white", fontColor:"black" });
+      this.setState({ color: "white", fontColor:"black",boxShadow: "0 2px 2px -2px rgba(0,0,0,.5)" });
     } else {
-      this.setState({ color: "transparent", fontColor:"white" });
+      this.setState({ color: "transparent", fontColor:"white", boxShadow: "" });
     }
   };
 
@@ -31,7 +31,7 @@ export default class NavigationBar extends React.Component {
     return (
       <div
         className="NavContainer"
-        style={{ backgroundColor: this.state.color, color: this.state.fontColor }}
+        style={{ backgroundColor: this.state.color, color: this.state.fontColor , boxShadow: this.state.boxShadow}}
       >
         <nav
           id="navbar"
@@ -69,7 +69,7 @@ export default class NavigationBar extends React.Component {
               className="titles NavigationTabAnchor"
               onClick={this.toggleClass}
             >
-              <i class="fas fa-bars" />
+              <i className="fas fa-bars" />
             </a>
           </div>
         </nav>

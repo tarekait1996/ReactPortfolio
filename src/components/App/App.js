@@ -7,7 +7,9 @@ import SkillBox from "./../SkillBox/SkillBox";
 import Experience from "./../Experience/Experience";
 import Projects from "./../Projects/Projects";
 import Actuality from "../Actuality/Actuality";
-
+import Footer from './../Footer/Footer';
+import Contact from './../Contact/Contact'
+import RecommendationList from './../RecommendationList/RecommendationList';
 function App() {
   return (
     <div className="all">
@@ -29,7 +31,10 @@ function App() {
        skillSubTitle2="Languages I speak"/>
         </div> */}
         <Experience />
-        <Actuality />
+        <Actuality /> 
+        <RecommendationList/>
+        <Contact/>
+        <Footer/>
       </div>
     </div>
   );
