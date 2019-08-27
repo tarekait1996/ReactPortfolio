@@ -1,0 +1,17 @@
+.experience-title {
+  text-align: center;
+}
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.experience-content {
+  margin: 100px 25px;
+}
+.experiences-showcase-container {
+  text-align: center;
+  margin-top: 100px;
+}
+.ExperienceItemDiv {
+  margin-bottom: 50px;
+}
