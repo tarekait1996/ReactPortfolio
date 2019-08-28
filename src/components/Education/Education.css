@@ -1,0 +1,42 @@
+.education-content{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 100px;
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+
+.education-box{
+    padding: 26px 30px;
+    box-shadow: 0px 10px 20px 4px #00000015;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.education-item-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.education-title{
+    text-align: center;
+}
+
+.fa-university, .fa-graduation-cap{
+    text-align: center;
+    margin: 0 auto;
+}
+.uniicon{
+    margin: 0 auto;
+    text-align: center;
+}
+.fa-adobe{
+    color: black
+}
+.a {
+    text-decoration: none;
+}
