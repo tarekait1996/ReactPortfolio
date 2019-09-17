@@ -1,6 +1,6 @@
 .summary-container {
   background-color: white;
-  padding: 40px 15px;
+  padding: 100px 15px;
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));

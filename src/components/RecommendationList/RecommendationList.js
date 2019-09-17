@@ -11,9 +11,11 @@ export default class RecommendationList extends React.Component {
       <h2>What People Think of Me</h2>
       <hr className="is-hr-summary"></hr>
       <div className="recommendation-list-content">
-        <Recommendation className= "recommendation" name= "Christopher Cianci" paragraph={paragraph} position= "Project Manager at SLF"/>
-        <Recommendation className= "recommendation" name= "Razvan Gazinschi" paragraph={paragraph2} position= "Mobile Developer at SLF"/>
-        <Recommendation className= "recommendation" name= "Federico" paragraph={paragraph} position= "Director at SLF"/>
+        <Recommendation className= "recommendation" image = "https://playjoor.com/assets/avatar/elliot.jpg" name= "Christopher Cianci" paragraph={paragraph} position= "Project Manager at SLF"/>
+        <Recommendation className= "recommendation" image = "https://playjoor.com/assets/avatar/mark.png" name= "Razvan Gazinschi" paragraph={paragraph2} position= "Mobile Developer at SLF"/>
+        <Recommendation className= "recommendation" image = "https://playjoor.com/assets/avatar/matthew.png" name= "Federico" paragraph={paragraph} position= "Director at SLF"/>
+        <Recommendation className= "recommendation" image = "https://playjoor.com/assets/avatar/joe.jpg" name= "Charles Meda" paragraph={paragraph} position= "Project Manager at SLF"/>
+        <Recommendation className= "recommendation" image = "https://playjoor.com/assets/avatar/molly.png" name= "Jennifer " paragraph={paragraph2} position= "Scrum Master at SLF"/>
         </div>
       </section>
     );

@@ -5,7 +5,14 @@
     grid-column-gap: 20px;
     grid-row-gap: 100px;
     margin: 0 auto;
-    padding: 30px 30px;
+    padding: 100px 30px;
+}
+.education-item-container{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 100px 0px;
 }
 
 .education-box{
@@ -15,13 +22,6 @@
     width: 300px;
     margin: 0 auto;
 }
-
-.education-item-container{
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-}
-
 .education-title{
     text-align: center;
 }
@@ -40,3 +40,4 @@
 .a {
     text-decoration: none;
 }
+

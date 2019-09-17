@@ -8,6 +8,8 @@ import Experience from "./../Experience/Experience";
 import Footer from './../Footer/Footer';
 import Education from './../Education/Education';
 import Contact from './../Contact/Contact'
+import Quote from './../Quote/Quote';
+import Project from './../Projects/Projects';
 import RecommendationList from './../RecommendationList/RecommendationList';
 function App() {
   const string1 =" As an IOS Developer, I participated in the development  of mobile application for internal and external clients. This allowed to to communicate with Project Managers, System Designers, Business System Analysts, Application analysts, and Testing Specialists to deliver high-quality solutions.I was also involved in projects from initiation to deployment, particularly during the development phase. I also participated in the discovery and evaluation of new technologies.";
@@ -18,8 +20,10 @@ function App() {
       <LandingLayout />
       <div className="whiteDiv">
         <Summary />
+        <Quote/>
         <Experience />
         <Education/>
+        <Project/>
         <RecommendationList/>
         <Contact/>
         <Footer/>

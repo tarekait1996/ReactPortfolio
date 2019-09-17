@@ -7,7 +7,7 @@ export default class Recommendation extends React.Component {
       <section className="recommendation-container">
         <div className="recommendation-content">
           <img
-            src="https://playjoor.com/assets/avatar/elliot.jpg"
+            src= {this.props.image}
             alt=""
             className="circle-avatar"
           />
@@ -21,3 +21,4 @@ export default class Recommendation extends React.Component {
     );
   }
 }
+
