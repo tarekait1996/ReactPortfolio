@@ -23,7 +23,7 @@ function App() {
         <Quote/>
         <Experience />
         <Education/>
-        <Project/>
+        {/* <Project/> */}
         <RecommendationList/>
         <Contact/>
         <Footer/>
