@@ -41,7 +41,7 @@ export default class Summary extends React.Component {
                 8 December 2019
               </li>
               <li className="about-list-item">
-                    <button className="btn"><a className = "anchorNoStyle" href="./../../resume.pdf" target="_blank">Check my Resume</a></button>
+                    <button className="btn"><a className = "anchorNoStyle" href="./resume.pdf">Check my Resume</a></button>
               </li>
             </ul>
           </div>

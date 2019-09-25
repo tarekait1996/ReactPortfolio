@@ -17,11 +17,11 @@ function App() {
       <LandingLayout />
       <div className="whiteDiv">
         <Summary />
-        <Quote/>
         <Experience />
         <Education/>
         {/* <Project/> */}
         <RecommendationList/>
+        <Quote/>
         <Contact/>
         <Footer/>
       </div>
