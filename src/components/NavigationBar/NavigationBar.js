@@ -65,12 +65,13 @@ export default class NavigationBar extends React.Component {
             </a>
           </div>
           <div className="NavBarBurgerMenu">
-            <a
+            <section
               className="titles NavigationTabAnchor"
               onClick={this.toggleClass}
+              
             >
               <i className="fas fa-bars" />
-            </a>
+            </section>
           </div>
         </nav>
 

@@ -18,30 +18,30 @@ export default class Summary extends React.Component {
             <ul className="about-list">
               <li className="about-list-item">
                 <span className="about-list-item-fa">
-                  <i class="fa fa-envelope" />
+                  <i className="fa fa-envelope" />
                 </span>
                 tarekaithamouda@gmail.com
               </li>
               <li className="about-list-item">
                 <span className="about-list-item-fa">
-                  <i class="fa fa-phone" />
+                  <i className="fa fa-phone" />
                 </span>
                 +1-514-475-5957
               </li>
               <li className="about-list-item">
                 <span className="about-list-item-fa">
-                  <i class="fa fa-map-marker" />
+                  <i className="fa fa-map-marker" />
                 </span>
                 Montreal, QC, Canada
               </li>
               <li className="about-list-item">
                 <span className="about-list-item-fa">
-                  <i class="fa fa-calendar" />
+                  <i className="fa fa-calendar" />
                 </span>
                 8 December 2019
               </li>
               <li className="about-list-item">
-                    <button class="btn">Check my Resume</button>
+                    <button className="btn"><a className = "anchorNoStyle" href="./../../resume.pdf" target="_blank">Check my Resume</a></button>
               </li>
             </ul>
           </div>
@@ -51,7 +51,7 @@ export default class Summary extends React.Component {
           <h2 className="summary-title">Technical Skills</h2>
           <div className="skills-individual">
             <div className="skill-content">
-              <div class="info">
+              <div className="info">
                 <div className="skill-info-content">
                   <div className="skill-name">Java</div>
                   <div className="skill-year"> 5 years</div>
@@ -67,7 +67,7 @@ export default class Summary extends React.Component {
           </div>
           <div className="skills-individual">
             <div className="skill-content">
-              <div class="info">
+              <div className="info">
                 <div className="skill-info-content">
                   <div className="skill-name">IOS Development</div>
                   <div className="skill-year"> 2.5 years</div>
@@ -83,7 +83,7 @@ export default class Summary extends React.Component {
           </div>
           <div className="skills-individual">
             <div className="skill-content">
-              <div class="info">
+              <div className="info">
                 <div className="skill-info-content">
                   <div className="skill-name">Android Development</div>
                   <div className="skill-year"> 1 years</div>
@@ -99,7 +99,7 @@ export default class Summary extends React.Component {
           </div>
           <div className="skills-individual">
             <div className="skill-content">
-              <div class="info">
+              <div className="info">
                 <div className="skill-info-content">
                   <div className="skill-name">React</div>
                   <div className="skill-year"> .5 years</div>
@@ -115,7 +115,7 @@ export default class Summary extends React.Component {
           </div>
           <div className="skills-individual">
             <div className="skill-content">
-              <div class="info">
+              <div className="info">
                 <div className="skill-info-content">
                   <div className="skill-name">Angular</div>
                   <div className="skill-year"> .5 years</div>

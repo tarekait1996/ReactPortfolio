@@ -18,9 +18,9 @@ export default class Experience extends React.Component {
     console.log(this.state.hover ? "true" : "false");
   }
   render() {
-    const divClass = this.state.hover
-      ? "each-experience-content-over-background effect"
-      : "each-experience-content-over-background gone";
+    // const divClass = this.state.hover
+    //   ? "each-experience-content-over-background effect"
+    //   : "each-experience-content-over-background gone";
 
     const stringAndroid =
       " As an Android Developer, I participated in the development and maintenance of SunLife's mobile application. I mainly worked on the Provider Search section of the app. My tasks included completing features during sprints, refactoring code, contributing to unit Tests and UI tests, giving my input during sprint planning and refinement meetings.";

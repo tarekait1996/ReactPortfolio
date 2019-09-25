@@ -1,6 +1,5 @@
 import React from "react";
 import "./Education.css";
-import { argumentPlaceholder } from "@babel/types";
 import EducationBox from './EducationBox/EducationBox';
 
 export default class Education extends React.Component {

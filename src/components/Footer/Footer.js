@@ -8,20 +8,20 @@ export default class Footer extends React.Component {
         <div className="footer-content">
           <h3 className="footer-content-title">Tarek</h3>
           <div className="footer-content-icons">
-            <a className="footer-content-icons-anchor" href="#">
+            <a className="footer-content-icons-anchor" href="https://www.facebook.com/tarek.ait.7">
               <i className="fab fa-facebook-f" />
             </a>
-            <a className="footer-content-icons-anchor" href="#">
+            <a className="footer-content-icons-anchor" href="https://twitter.com/tarekaithamouda">
               <i className="fab fa-twitter" />
             </a>
-            <a className="footer-content-icons-anchor" href="#">
+            <a className="footer-content-icons-anchor" href="https://www.linkedin.com/in/tarek-ait-hamouda/">
               <i className="fab fa-linkedin" />
             </a>
-            <a className="footer-content-icons-anchor" href="#">
+            <a className="footer-content-icons-anchor" href="https://twitter.com/tarekaithamouda">
               <i className="fab fa-instagram" />
             </a>
           </div>
-          <p class="copy-text">
+          <p className="copy-text">
             Tarek Ait Hamouda © 2018. all right reserved. Kamehameha Solution
           </p>
         </div>
