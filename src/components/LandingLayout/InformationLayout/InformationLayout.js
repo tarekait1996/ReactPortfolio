@@ -7,10 +7,8 @@ export default class InformationLayout extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="bg" />
-        <div className="bg bg2" />
-        <div className="bg bg3" />
         <div className="centeredContainer">
+
           <h1 className="title">
             <Typist blink="true">
               <span>I am Tarek Ait Hamouda.</span>

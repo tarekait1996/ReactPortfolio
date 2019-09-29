@@ -1,5 +1,5 @@
 body {
-  background-image: url(./media/background-min.jpg);
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,4 +8,5 @@ body {
   background-attachment: fixed;
   margin: 0px;
   font-family: "Lato", sans-serif;
+  background-image: url(/media/Portfolio-background.jpg);
 }
