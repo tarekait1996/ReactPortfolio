@@ -90,6 +90,10 @@ hr {
   font-size: 30px;
   color: white;
 }
+
+.socialContactsIcons a .fab:hover{
+  color: #191849;
+}
 @media screen and (max-width: 600px) {
   .socialContactsIcons {
     width: 50%;

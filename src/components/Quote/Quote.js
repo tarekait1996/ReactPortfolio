@@ -10,11 +10,13 @@ export default class Quote extends React.Component {
           <hr className="is-hr-summary" />
 
           <div className="quote-item-sentence">
+            <blockquote>
             <p className="quote-sentence">
               “It isn't what you have or who you are or where you are or what
               you are doing that makes you happy or unhappy. It is what you
               think about it.”
             </p>
+            </blockquote>
             <h4 className="quote-sentence-credit">― Dale Carnegie, How to Win Friends and Influence People</h4>
           </div>
         </div>

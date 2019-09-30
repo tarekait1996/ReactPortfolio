@@ -16,7 +16,8 @@ function App() {
       <NavigationBar />
       <LandingLayout />
       <div className="whiteDiv">
-        <Summary />
+
+        <Summary id = "about-me"/>
         <Experience />
         <Education/>
         {/* <Project/> */}

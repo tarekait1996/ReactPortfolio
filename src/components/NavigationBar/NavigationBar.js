@@ -42,35 +42,35 @@ export default class NavigationBar extends React.Component {
           <div>
             <a
             className={
-              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
             }  href="/#">
               Tarek Ait Hamouda
             </a>
           </div>
           <div className="NavBarAnchorContainer">
             <a className={
-              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
-            } href="/">
+              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+            } href="#about-me">
               About me
             </a>
           </div>
           <div className="NavBarAnchorContainer">
             <a className={
-              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
             }href="/">
               Experience
             </a>
           </div>
           <div className="NavBarAnchorContainer">
             <a className={
-              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
             } href="/">
               Portfolio
             </a>
           </div>
           <div className="NavBarAnchorContainer">
             <a className={
-              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
             } href="/">
               Say Hi
             </a>

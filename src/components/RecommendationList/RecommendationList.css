@@ -1,19 +1,21 @@
 .recommendation-list-content {
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 100px;
     margin: 0 auto;
     padding: 100px 30px;
+    height: auto;
 }
 
 .recommendation-list-container {
     width:100%;
     margin: 0 auto;
     text-align: center;
+    height: auto;
 }
 .recommendation {
-    
+    height: auto;
 }
 
