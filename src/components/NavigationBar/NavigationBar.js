@@ -17,7 +17,7 @@ export default class NavigationBar extends React.Component {
 
   listenScrollEvent = e => {
     if (window.scrollY > 200) {
-      this.setState({ color: "white", fontColor:"black",boxShadow: "0 2px 2px -2px rgba(0,0,0,.5)" });
+      this.setState({ color: "white", fontColor:"black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.5)" });
     } else {
       this.setState({ color: "transparent", fontColor:"white", boxShadow: "" });
     }
@@ -40,27 +40,38 @@ export default class NavigationBar extends React.Component {
           }
         >
           <div>
-            <a className="titles NavigationTabAnchor" href="/#">
+            <a
+            className={
+              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+            }  href="/#">
               Tarek Ait Hamouda
             </a>
           </div>
           <div className="NavBarAnchorContainer">
-            <a className="titles NavigationTabAnchor" href="/">
+            <a className={
+              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+            } href="/">
               About me
             </a>
           </div>
           <div className="NavBarAnchorContainer">
-            <a className="titles NavigationTabAnchor" href="/">
+            <a className={
+              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+            }href="/">
               Experience
             </a>
           </div>
           <div className="NavBarAnchorContainer">
-            <a className="titles NavigationTabAnchor" href="/">
+            <a className={
+              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+            } href="/">
               Portfolio
             </a>
           </div>
           <div className="NavBarAnchorContainer">
-            <a className="titles NavigationTabAnchor" href="/">
+            <a className={
+              this.state.fontColor == "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
+            } href="/">
               Say Hi
             </a>
           </div>

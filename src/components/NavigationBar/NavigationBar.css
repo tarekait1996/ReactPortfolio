@@ -28,13 +28,17 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  color: black;
+  color: white;
 }
 .NavBarAnchorContainer {
   display:flex;
   margin: 0 auto;
 }
-.titles {
+.white-titles {
+  display: flex;
+  color: white;
+}
+.black-titles{
   display: flex;
   color: black;
 }
@@ -44,9 +48,6 @@
   text-decoration: none;
 }
 
-a:visited {
-  color: gray;
-}
 
 a:hover {
   color: red;

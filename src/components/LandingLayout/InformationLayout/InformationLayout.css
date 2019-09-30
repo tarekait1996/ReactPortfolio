@@ -1,8 +1,7 @@
 .container {
   text-align: center;
-  margin-top: 50px;
   position: relative;
-  height: 95vh;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.7);
 }
 .centeredContainer {
@@ -20,7 +19,7 @@
 }
 .description {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 .fa-chevron-down {
   color: white;

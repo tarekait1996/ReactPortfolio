@@ -18,9 +18,11 @@ export default class InformationLayout extends React.Component {
           </h1>
           <div className="description-Container">
             <p className="description">
-              Software Engineering student. Mobile & web development enthusiast.
+              Software Engineering student. 
+              <br/>
+              Mobile & web development enthusiast.
               <br />
-              Love Music and Anime.
+              Love Art, Food and Music.
             </p>
           </div>
           <hr />
