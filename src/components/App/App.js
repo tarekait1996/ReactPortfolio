@@ -8,7 +8,7 @@ import Experience from "./../Experience/Experience";
 import Footer from './../Footer/Footer';
 import Education from './../Education/Education';
 import Contact from './../Contact/Contact'
-import Quote from './../Quote/Quote';
+import Timeline from './../Timeline/Timeline';
 import RecommendationList from './../RecommendationList/RecommendationList';
 function App() {
   return (
@@ -16,13 +16,13 @@ function App() {
       <NavigationBar />
       <LandingLayout />
       <div className="whiteDiv">
-
         <Summary id = "about-me"/>
         <Experience />
         <Education/>
+        {/* <Timeline /> */}
         {/* <Project/> */}
         <RecommendationList/>
-        <Quote/>
+        {/* <Quote/> */}
         <Contact/>
         <Footer/>
       </div>

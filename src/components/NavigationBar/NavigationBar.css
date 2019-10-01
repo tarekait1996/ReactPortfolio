@@ -3,8 +3,8 @@
   padding: 10px 10px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 .NavContainer {
   position: fixed;
@@ -25,10 +25,11 @@
 }
 .NavigationTabAnchor {
   white-space: nowrap ;
-  position: relative;
+  margin: 0;
+  position: absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: white;
 }
 .NavBarAnchorContainer {
   display:flex;
@@ -113,4 +114,7 @@ to   { opacity: 1; }
   color: white;
   font-size: 1em;
 
+}
+#logo{
+  height:35px;
 }

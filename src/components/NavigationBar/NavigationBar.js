@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavigationBar.css";
+import logo from './logo.png';
 
 export default class NavigationBar extends React.Component {
   constructor(props) {
@@ -40,12 +41,7 @@ export default class NavigationBar extends React.Component {
           }
         >
           <div>
-            <a
-            className={
-              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
-            }  href="/#">
-              Tarek Ait Hamouda
-            </a>
+              <img id="logo" src ={logo} alt="logo"/>
           </div>
           <div className="NavBarAnchorContainer">
             <a className={

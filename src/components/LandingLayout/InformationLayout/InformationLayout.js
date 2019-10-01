@@ -8,7 +8,6 @@ export default class InformationLayout extends React.Component {
     return (
       <div className="container">
         <div className="centeredContainer">
-
           <h1 className="title">
             <Typist blink="true">
               <span>I am Tarek Ait Hamouda.</span>
@@ -18,8 +17,8 @@ export default class InformationLayout extends React.Component {
           </h1>
           <div className="description-Container">
             <p className="description">
-              Software Engineering student. 
-              <br/>
+              Software Engineering student.
+              <br />
               Mobile & web development enthusiast.
               <br />
               Love Art, Food and Music.
@@ -41,10 +40,19 @@ export default class InformationLayout extends React.Component {
             </a>
           </div>
         </div>
-        <div className="bottomDiv">
+        {/* <div className="bottomDiv">
           <a href="/">
             <i className="fas fa-chevron-down" />
           </a>
+        </div> */}
+
+        <div class="icon-scroll">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="icon-arrows">
+            <span></span>
+          </div>
         </div>
       </div>
     );
