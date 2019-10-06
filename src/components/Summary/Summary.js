@@ -1,10 +1,11 @@
 import React from "react";
 import "./Summary.css";
+import resume from './resume.pdf';
 
 export default class Summary extends React.Component {
   render() {
     return (
-      <section id="about" className="summary-container">
+      <section id = "about-me" className="summary-container">
         <div className="summary-content">
           <h2 className="summary-title">Hi, I'm Tarek. Nice to meet you!</h2>
           <p className="summary-description">
@@ -42,7 +43,7 @@ export default class Summary extends React.Component {
                 8 December 1996
               </li>
               <li className="about-list-item">
-                    <div className="btn"><a className = "anchorNoStyle" href="./resume.pdf"><span>Get My Resume</span></a></div>
+                    <div className="btn"><a className = "anchorNoStyle" href={resume} download><span>Get My Resume</span></a></div>
               </li>
             </ul>
           </div>

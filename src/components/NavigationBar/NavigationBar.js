@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavigationBar.css";
-import logo from './logo.png';
+import logo from "./logo.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class NavigationBar extends React.Component {
   constructor(props) {
@@ -18,9 +19,17 @@ export default class NavigationBar extends React.Component {
 
   listenScrollEvent = e => {
     if (window.scrollY > 200) {
-      this.setState({ color: "white", fontColor:"black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.5)" });
+      this.setState({
+        color: "white",
+        fontColor: "black",
+        boxShadow: "0 2px 2px -2px rgba(0,0,0,.5)"
+      });
     } else {
-      this.setState({ color: "transparent", fontColor:"white", boxShadow: "" });
+      this.setState({
+        color: "transparent",
+        fontColor: "white",
+        boxShadow: ""
+      });
     }
   };
 
@@ -32,7 +41,11 @@ export default class NavigationBar extends React.Component {
     return (
       <div
         className="NavContainer"
-        style={{ backgroundColor: this.state.color, color: this.state.fontColor , boxShadow: this.state.boxShadow}}
+        style={{
+          backgroundColor: this.state.color,
+          color: this.state.fontColor,
+          boxShadow: this.state.boxShadow
+        }}
       >
         <nav
           id="navbar"
@@ -41,41 +54,120 @@ export default class NavigationBar extends React.Component {
           }
         >
           <div>
-              <img id="logo" src ={logo} alt="logo"/>
+            <img id="logo" src={logo} alt="logo" />
           </div>
           <div className="NavBarAnchorContainer">
-            <a className={
-              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
-            } href="#about-me">
-              About me
-            </a>
+          <Link
+              className={
+                this.state.fontColor === "black"
+                  ? "NavigationTabAnchor black-titles"
+                  : "NavigationTabAnchor white-titles"
+              }
+              activeClass="active"
+              to="main"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Main
+            </Link>
           </div>
           <div className="NavBarAnchorContainer">
-            <a className={
-              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
-            }href="/">
+          <Link
+              className={
+                this.state.fontColor === "black"
+                  ? "NavigationTabAnchor black-titles"
+                  : "NavigationTabAnchor white-titles"
+              }
+              activeClass="active"
+              to="about-me"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              About
+            </Link>
+          </div>
+          <div className="NavBarAnchorContainer">
+            <Link
+              className={
+                this.state.fontColor === "black"
+                  ? "NavigationTabAnchor black-titles"
+                  : "NavigationTabAnchor white-titles"
+              }
+              activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
               Experience
-            </a>
+            </Link>
           </div>
           <div className="NavBarAnchorContainer">
-            <a className={
-              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
-            } href="/">
-              Portfolio
-            </a>
+            <Link
+              className={
+                this.state.fontColor === "black"
+                  ? "NavigationTabAnchor black-titles"
+                  : "NavigationTabAnchor white-titles"
+              }
+              activeClass="active"
+              to="education"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Education
+            </Link>
           </div>
           <div className="NavBarAnchorContainer">
-            <a className={
-              this.state.fontColor === "black" ? "NavigationTabAnchor black-titles" : "NavigationTabAnchor white-titles"
-            } href="/">
+          <Link
+              className={
+                this.state.fontColor === "black"
+                  ? "NavigationTabAnchor black-titles"
+                  : "NavigationTabAnchor white-titles"
+              }
+              activeClass="active"
+              to="recommendation"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Testimonials
+            </Link>
+          </div>
+          <div className="NavBarAnchorContainer">
+          <Link
+              className={
+                this.state.fontColor === "black"
+                  ? "NavigationTabAnchor black-titles"
+                  : "NavigationTabAnchor white-titles"
+              }
+              activeClass="active"
+              to="contact-me"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
               Say Hi
-            </a>
+            </Link>
           </div>
           <div className="NavBarBurgerMenu">
             <section
               className="titles NavigationTabAnchor"
               onClick={this.toggleClass}
-              
             >
               <i className="fas fa-bars" />
             </section>
@@ -87,7 +179,7 @@ export default class NavigationBar extends React.Component {
             this.state.active ? "navbarMobileActive" : "navbarMobileInactive"
           }
         >
-        <i className="fas fa-times" onClick={this.toggleClass}></i>
+          <i className="fas fa-times" onClick={this.toggleClass}></i>
           <div className="navMenuMobile">
             <div className="">
               <a className="navmobilemenuitem" href="/">

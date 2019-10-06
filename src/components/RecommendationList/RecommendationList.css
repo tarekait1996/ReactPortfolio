@@ -5,7 +5,7 @@
     grid-column-gap: 20px;
     grid-row-gap: 100px;
     margin: 0 auto;
-    padding: 100px 30px;
+    padding: 50px 30px;
     height: auto;
 }
 
@@ -14,6 +14,7 @@
     margin: 0 auto;
     text-align: center;
     height: auto;
+    padding-top: 100px;
 }
 .recommendation {
     height: auto;

@@ -1,12 +1,13 @@
 import React from "react";
 import "./InformationLayout.css";
 import Typist from "react-typist";
+import { Link, animateScroll as scroll } from "react-scroll";
 // import pic from './../InformationLayout/logo.png';
 
 export default class InformationLayout extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div id="main" className="container">
         <div className="centeredContainer">
           <h1 className="title">
             <Typist blink="true">
@@ -32,28 +33,26 @@ export default class InformationLayout extends React.Component {
             <a href="https://www.linkedin.com/in/tarek-ait-hamouda/">
               <i className="fab fa-linkedin" />
             </a>
-            <a href="https://www.pictame.com/user/tarekait96/15069466132">
-              <i className="fab fa-instagram" />
-            </a>
-            <a href="https://twitter.com/tarekaithamouda">
-              <i className="fab fa-twitter" />
-            </a>
           </div>
         </div>
-        {/* <div className="bottomDiv">
-          <a href="/">
-            <i className="fas fa-chevron-down" />
-          </a>
-        </div> */}
-
-        <div class="icon-scroll">
-          <div class="mouse">
-            <div class="wheel"></div>
+        <Link
+          activeClass="active"
+          to="about-me"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          onSetActive={this.handleSetActive}
+        >
+          <div className="icon-scroll">
+            <div className="mouse">
+              <div className="wheel"></div>
+            </div>
+            <div className="icon-arrows">
+              <span></span>
+            </div>
           </div>
-          <div class="icon-arrows">
-            <span></span>
-          </div>
-        </div>
+        </Link>
       </div>
     );
   }

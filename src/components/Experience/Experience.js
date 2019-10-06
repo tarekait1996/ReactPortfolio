@@ -28,12 +28,10 @@ export default class Experience extends React.Component {
       " As an IOS Developer, I participated in the development  of mobile application for internal and external clients. This allowed to to communicate with Project Managers, System Designers, Business System Analysts, Application analysts, and Testing Specialists to deliver high-quality solutions.I was also involved in projects from initiation to deployment, particularly during the development phase. I also participated in the discovery and evaluation of new technologies.";
     
       return (
-      <section className="experience-container">
+      <section id = "experience" className="experience-container">
+        <h2 className="experience-title">Experience</h2>
+        <hr className="is-hr-summary" />
         <div className="experience-content">
-          <h2 className="experience-title">Experience</h2>
-
-          <hr className="is-hr-summary" />
-
           <div className="experiences-showcase-container">
             <div className="ExperienceItemDiv">
               <ExperienceItem

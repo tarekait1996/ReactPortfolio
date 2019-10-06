@@ -4,14 +4,13 @@
 .experience-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0px;
+  padding: 100px 30px 0px 30px;
 }
 .experience-content {
-  margin: 100px 25px;
+  padding-top: 50px;
 }
 .experiences-showcase-container {
   text-align: center;
-  margin-top: 100px;
 }
 .ExperienceItemDiv {
   margin-bottom: 50px;

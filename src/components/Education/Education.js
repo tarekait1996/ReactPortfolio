@@ -5,7 +5,7 @@ import EducationBox from './EducationBox/EducationBox';
 export default class Education extends React.Component {
   render() {
     return (
-      <section className="education-item-container">
+      <section id ="education" className="education-item-container">
         <h2 className="education-title">Education</h2>
         <hr className="is-hr-summary" />
 
