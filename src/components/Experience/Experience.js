@@ -2,6 +2,7 @@ import React from "react";
 import "./Experience-list.css";
 import ExperienceItem from "./../Experience-item/Experience-item";
 import sunlifeLogo from "./sunlife-logo.png";
+import Bounce from 'react-reveal/Bounce';
 
 export default class Experience extends React.Component {
   constructor(props) {
@@ -34,6 +35,7 @@ export default class Experience extends React.Component {
         <div className="experience-content">
           <div className="experiences-showcase-container">
             <div className="ExperienceItemDiv">
+            <Bounce left>
               <ExperienceItem
                 projectTitle="IOS Development (Co-op)"
                 projectDate = "August 2018 - December 2018"
@@ -41,8 +43,10 @@ export default class Experience extends React.Component {
                 projectDescription={stringIOS}
                 image={sunlifeLogo}
               />
+              </Bounce>
             </div>
             <div className = "ExperienceItemDiv">
+            <Bounce right>
             <ExperienceItem
               className="ExperienceItemDiv"
               projectTitle="Android Development (Co-op)"
@@ -51,6 +55,7 @@ export default class Experience extends React.Component {
               projectDescription={stringAndroid}
               image={sunlifeLogo}
             />
+            </Bounce>
             </div>
           </div>
         </div>

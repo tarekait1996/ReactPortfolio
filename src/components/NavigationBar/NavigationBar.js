@@ -181,25 +181,91 @@ export default class NavigationBar extends React.Component {
         >
           <i className="fas fa-times" onClick={this.toggleClass}></i>
           <div className="navMenuMobile">
-            <div className="">
-              <a className="navmobilemenuitem" href="/">
-                About me
-              </a>
+            <div className="" onClick={this.toggleClass}>
+            <Link
+              className="navmobilemenuitem"
+              activeClass="active"
+              to="main"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Main
+            </Link>
             </div>
-            <div className="">
-              <a className="navmobilemenuitem" href="/">
-                Experience
-              </a>
+            <div className="" onClick={this.toggleClass}>
+            <Link
+              className="navmobilemenuitem"
+              activeClass="active"
+              to="about-me"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              About
+            </Link>
             </div>
-            <div className="">
-              <a className="navmobilemenuitem" href="/">
-                Portfolio
-              </a>
+            <div className="" onClick={this.toggleClass}>
+            <Link
+              className="navmobilemenuitem"
+              activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Experience
+            </Link>
+            </div >
+            <div className="" onClick={this.toggleClass}>
+            <Link
+              className="navmobilemenuitem"
+              activeClass="active"
+              to="education"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Education
+            </Link>
             </div>
-            <div className="">
-              <a className="navmobilemenuitem" href="/">
-                Say Hi
-              </a>
+            <div className="" onClick={this.toggleClass}>
+            <Link
+              className="navmobilemenuitem"
+              activeClass="active"
+              to="recommendation"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Testimonials
+            </Link>
+            </div>
+            <div className="" onClick={this.toggleClass}>
+            <Link
+              className="navmobilemenuitem"
+              activeClass="active"
+              to="contact-me"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={
+                this.handleSetActive
+              }
+            >
+              Say Hi
+            </Link>
             </div>
           </div>
         </div>

@@ -8,6 +8,9 @@ import Footer from './../Footer/Footer';
 import Education from './../Education/Education';
 import Contact from './../Contact/Contact'
 import RecommendationList from './../RecommendationList/RecommendationList';
+import config from 'react-reveal/globals';
+
+config({ ssrFadeout: true });
 function App() {
   return (
     <div className="all">

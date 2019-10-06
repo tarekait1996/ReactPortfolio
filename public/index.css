@@ -1,12 +1,13 @@
 body {
-  
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  background-image: url(/media/Portfolio-background.jpg);
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0px;
-  font-family: "Lato", sans-serif;
-  background-image: url(/media/Portfolio-background.jpg);
+  background-color: #464646;
 }

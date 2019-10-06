@@ -1,6 +1,7 @@
 import React from "react";
 import Recommendation from "./../Recommendation/Recommendation";
 import "./RecommendationList.css";
+import Bounce from 'react-reveal/Bounce';
 
 export default class RecommendationList extends React.Component {
   render() {
@@ -15,13 +16,15 @@ export default class RecommendationList extends React.Component {
         <h2>What People Think of Me</h2>
         <hr className="is-hr-summary"></hr>
         <div className="recommendation-list-content">
+          <Bounce left>
           <Recommendation
             className="recommendation"
             image="https://playjoor.com/assets/avatar/matthew.png"
             name="Federico Cánovas Peña, MBA, PMP, B.Eng."
             paragraph={paragraph3}
             position="Executive Director - Digital Innovation at SLF"
-          />
+          /></Bounce>
+          <Bounce right>
           <Recommendation
             className="recommendation"
             image="https://playjoor.com/assets/avatar/elliot.jpg"
@@ -29,6 +32,8 @@ export default class RecommendationList extends React.Component {
             paragraph={paragraph}
             position="Practice Manager, Mobile CoE at SLF"
           />
+          </Bounce>
+          <Bounce right>
           <Recommendation
             className="recommendation"
             image="https://playjoor.com/assets/avatar/mark.png"
@@ -36,6 +41,7 @@ export default class RecommendationList extends React.Component {
             paragraph={paragraph2}
             position="Mobile Application Developer at SLF"
           />
+          </Bounce>
         </div>
       </section>
     );
