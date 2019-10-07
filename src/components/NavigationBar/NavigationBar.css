@@ -3,7 +3,7 @@
   padding: 10px 10px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
 }
 .NavContainer {
@@ -94,7 +94,7 @@ to   { opacity: 1; }
   text-align: center;
   position: absolute;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .NavBarAnchorContainer {
     display: none;
   }

@@ -29,7 +29,7 @@ export default class Contact extends React.Component {
 
           <div className="btn">
 
-            <a className="anchorNoStyle smallBtn" href="./resume.pdf">
+            <a className="anchorNoStyle smallBtn" href="/">
 
               <span>Send</span>
 
