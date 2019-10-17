@@ -11,9 +11,11 @@ export default class InformationLayout extends React.Component {
         <div className="centeredContainer">
           <h1 className="title">
             <Typist blink="true">
+              <span>Hi,</span>
+              <br/>
               <span>I am Tarek Ait Hamouda.</span>
-              <Typist.Backspace count={23} delay={600} />
-              <span>Just call me Tarek.</span>
+              <Typist.Backspace count={23} delay={2000} />
+              <span>Nice to meet you</span>
             </Typist>
           </h1>
           <div className="description-Container">

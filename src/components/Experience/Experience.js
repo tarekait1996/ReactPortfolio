@@ -25,9 +25,9 @@ export default class Experience extends React.Component {
 
     const stringAndroid =
       " As an Android Developer, I participated in the development and maintenance of SunLife's mobile application. I mainly worked on the Provider Search section of the app. My tasks included completing features during sprints, refactoring code, contributing to unit Tests and UI tests, giving my input during sprint planning and refinement meetings.";
-      const stringIOS =
+    const stringIOS =
       " As an IOS Developer, I participated in the development  of mobile application for internal and external clients. This allowed to to communicate with Project Managers, System Designers, Business System Analysts, Application analysts, and Testing Specialists to deliver high-quality solutions.I was also involved in projects from initiation to deployment, particularly during the development phase. I also participated in the discovery and evaluation of new technologies.";
-    
+
       return (
       <section id = "experience" className="experience-container">
         <h2 className="experience-title">Experience</h2>
