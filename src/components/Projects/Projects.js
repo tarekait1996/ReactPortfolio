@@ -15,7 +15,7 @@ export default class Project extends React.Component {
     " Twatter is a twitter-like social platform made for roasting. The objective of this social platform is to create a place where people can be roasted and post funny content. The Like is, in reality, a dislike and people are encouraged to troll in the comments. We worked in a group of 10 people and similarly to the Helping Hand, we also used the MEAN stack to build the website (MongoDB, ExpressJS, Angular, NodeJS). ";
      
     return (
-      <section id = "experience" className="experience-container">
+      <section id = "projects" className="experience-container">
             <h2 className="experience-title">Projects</h2>
             <hr className="is-hr-summary" />
             <div className="experience-content">

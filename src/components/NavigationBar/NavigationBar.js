@@ -6,16 +6,22 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default class NavigationBar extends React.Component {
   constructor(props) {
     super(props);
-    this.toggleClass = this.toggleClass.bind(this);
     this.state = {
-      active: false,
+      menu_class: "",
       color: "transparent"
     };
   }
-  toggleClass() {
-    const currentState = this.state.active;
-    this.setState({ active: !currentState });
-  }
+  setToggleTopMenuClass = () => {
+    if (this.state.menu_class === "") {
+      this.setState({
+        menu_class: "toggled"
+      });
+    } else {
+      this.setState({
+        menu_class: ""
+      });
+    }
+  };
 
   listenScrollEvent = e => {
     if (window.scrollY > 200) {
@@ -38,6 +44,7 @@ export default class NavigationBar extends React.Component {
   }
 
   render() {
+    let top_menu_class = `top-menu ${this.state.menu_class}`;
     return (
       <div
         className="NavContainer"
@@ -48,16 +55,13 @@ export default class NavigationBar extends React.Component {
         }}
       >
         <nav
-          id="navbar"
-          className={
-            this.state.active ? "navbarMobileInactive" : "NavBar grid-container"
-          }
+          className={top_menu_class}
         >
           <div>
             <img id="logo" src={logo} alt="logo" />
           </div>
           <div className="NavBarAnchorContainer">
-          <Link
+            <Link
               className={
                 this.state.fontColor === "black"
                   ? "NavigationTabAnchor black-titles"
@@ -75,7 +79,7 @@ export default class NavigationBar extends React.Component {
             </Link>
           </div>
           <div className="NavBarAnchorContainer">
-          <Link
+            <Link
               className={
                 this.state.fontColor === "black"
                   ? "NavigationTabAnchor black-titles"
@@ -118,6 +122,24 @@ export default class NavigationBar extends React.Component {
                   : "NavigationTabAnchor white-titles"
               }
               activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              Projects
+            </Link>
+          </div>
+          <div className="NavBarAnchorContainer">
+            <Link
+              className={
+                this.state.fontColor === "black"
+                  ? "NavigationTabAnchor black-titles"
+                  : "NavigationTabAnchor white-titles"
+              }
+              activeClass="active"
               to="education"
               spy={true}
               smooth={true}
@@ -129,7 +151,7 @@ export default class NavigationBar extends React.Component {
             </Link>
           </div>
           <div className="NavBarAnchorContainer">
-          <Link
+            <Link
               className={
                 this.state.fontColor === "black"
                   ? "NavigationTabAnchor black-titles"
@@ -147,7 +169,7 @@ export default class NavigationBar extends React.Component {
             </Link>
           </div>
           <div className="NavBarAnchorContainer">
-          <Link
+            <Link
               className={
                 this.state.fontColor === "black"
                   ? "NavigationTabAnchor black-titles"
@@ -166,109 +188,17 @@ export default class NavigationBar extends React.Component {
           </div>
           <div className="NavBarBurgerMenu">
             <section
-              className="titles NavigationTabAnchor"
-              onClick={this.toggleClass}
+            className={
+              this.state.fontColor === "black"
+                ? "top-menu-icon NavigationTabAnchor black-titles"
+                : "top-menu-icon NavigationTabAnchor white-titles"
+            }
+            onClick={this.setToggleTopMenuClass}
             >
               <i className="fas fa-bars" />
             </section>
           </div>
         </nav>
-
-        <div
-          className={
-            this.state.active ? "navbarMobileActive" : "navbarMobileInactive"
-          }
-        >
-          <i className="fas fa-times" onClick={this.toggleClass}></i>
-          <div className="navMenuMobile">
-            <div className="" onClick={this.toggleClass}>
-            <Link
-              className="navmobilemenuitem"
-              activeClass="active"
-              to="main"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onSetActive={this.handleSetActive}
-            >
-              Main
-            </Link>
-            </div>
-            <div className="" onClick={this.toggleClass}>
-            <Link
-              className="navmobilemenuitem"
-              activeClass="active"
-              to="about-me"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onSetActive={this.handleSetActive}
-            >
-              About
-            </Link>
-            </div>
-            <div className="" onClick={this.toggleClass}>
-            <Link
-              className="navmobilemenuitem"
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onSetActive={this.handleSetActive}
-            >
-              Experience
-            </Link>
-            </div >
-            <div className="" onClick={this.toggleClass}>
-            <Link
-              className="navmobilemenuitem"
-              activeClass="active"
-              to="education"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onSetActive={this.handleSetActive}
-            >
-              Education
-            </Link>
-            </div>
-            <div className="" onClick={this.toggleClass}>
-            <Link
-              className="navmobilemenuitem"
-              activeClass="active"
-              to="recommendation"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onSetActive={this.handleSetActive}
-            >
-              Testimonials
-            </Link>
-            </div>
-            <div className="" onClick={this.toggleClass}>
-            <Link
-              className="navmobilemenuitem"
-              activeClass="active"
-              to="contact-me"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              onSetActive={
-                this.handleSetActive
-              }
-            >
-              Say Hi
-            </Link>
-            </div>
-          </div>
-        </div>
       </div>
     );
   }
