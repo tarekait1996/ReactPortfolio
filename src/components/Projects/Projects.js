@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import htnPhoto from "./htnPortfolio.png";
-import devBlock from "./devBlock.png";
+import devBlock from "./devblockLogo.png";
 import twatter from "./twatterLogo.png";
 import ProjectItem from "./../Project-item/Project-item";
 import Bounce from 'react-reveal/Bounce';
