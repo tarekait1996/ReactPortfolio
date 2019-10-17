@@ -10,5 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
+  overflow: hidden;
   background-color: #464646;
 }
