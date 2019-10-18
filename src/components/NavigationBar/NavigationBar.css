@@ -1,4 +1,5 @@
 .top-menu {
+
   max-width: 1200px;
   padding: 10px 10px;
   margin: 0 auto;
@@ -13,7 +14,7 @@
 }
 .NavContainer {
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -34,7 +35,6 @@
   text-align: center;
   margin: 0 auto;
   white-space: nowrap;
-  position: relative;
 
 }
 .NavBarAnchorContainer {
