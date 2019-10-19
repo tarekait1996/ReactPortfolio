@@ -197,7 +197,12 @@ export default class NavigationBar extends React.Component {
             }
             onClick={this.setToggleTopMenuClass}
             >
-              <FontAwesomeIcon className="faIcon" icon={faBars} />
+              <FontAwesomeIcon 
+              className={
+              this.state.fontColor === "black"
+              ? "faBarsIconBlack"
+              : "faBarsIconWhite"}
+              icon={faBars} />
             </section>
           </div>
         </nav>
