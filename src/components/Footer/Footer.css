@@ -15,15 +15,6 @@
     max-width: 1200px;
 }
 
-.footer-content-icons-anchor .fab {
-    font-size: 25px;
-    color: black;
-}
-
-.footer-content-icons-anchor .fab:hover {
-    color: red;
-}
-
 .footer-content-icons{
     display: grid;
     width: 20%;

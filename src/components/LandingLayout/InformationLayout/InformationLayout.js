@@ -2,7 +2,9 @@ import React from "react";
 import "./InformationLayout.css";
 import Typist from "react-typist";
 import { Link, animateScroll as scroll } from "react-scroll";
-// import pic from './../InformationLayout/logo.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default class InformationLayout extends React.Component {
   render() {
@@ -12,7 +14,7 @@ export default class InformationLayout extends React.Component {
           <h1 className="title">
             <Typist blink="true">
               <span>Hi,</span>
-              <br/>
+              <br />
               <span>I am Tarek Ait Hamouda.</span>
               <Typist.Backspace count={23} delay={2000} />
               <span>Nice to meet you</span>
@@ -30,10 +32,10 @@ export default class InformationLayout extends React.Component {
           <hr />
           <div className="socialContactsIcons">
             <a href="https://github.com/tarekait1996">
-              <i className="fab fa-github-alt" />
+              <FontAwesomeIcon className="faIcon" icon={faGithub} />
             </a>
             <a href="https://www.linkedin.com/in/tarek-ait-hamouda/">
-              <i className="fab fa-linkedin" />
+              <FontAwesomeIcon className="faIcon" icon={faLinkedinIn} />
             </a>
           </div>
         </div>

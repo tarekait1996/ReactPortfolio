@@ -14,3 +14,15 @@
   width: 100vw;
 }
 
+.socialContactsIcons {
+  font-size:30px;
+}
+.socialContactsIcons :hover {
+  fill: orange;
+  color: orange;
+}
+.faIcon {
+  fill: white;
+  color: white;
+}
+

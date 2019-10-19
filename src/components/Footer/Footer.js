@@ -1,5 +1,8 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default class Footer extends React.Component {
   render() {
@@ -8,11 +11,17 @@ export default class Footer extends React.Component {
         <div className="footer-content">
           <h3 className="footer-content-title">Tarek</h3>
           <div className="footer-content-icons">
-            <a className="footer-content-icons-anchor" href="https://www.linkedin.com/in/tarek-ait-hamouda/">
-              <i className="fab fa-linkedin" />
+            <a
+              className="socialContactsIcons"
+              href="https://www.linkedin.com/in/tarek-ait-hamouda/"
+            >
+              <FontAwesomeIcon className="faIcon" icon={faLinkedinIn} />
             </a>
-            <a className="footer-content-icons-anchor" href="https://github.com/tarekait1996">
-              <i className="fab fa-github-alt" />
+            <a
+              className="socialContactsIcons"
+              href="https://github.com/tarekait1996"
+            >
+              <FontAwesomeIcon className="faIcon" icon={faGithub} />
             </a>
           </div>
           <p className="copy-text">

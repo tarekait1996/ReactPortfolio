@@ -19,7 +19,7 @@ export default class RecommendationList extends React.Component {
           <Bounce left>
           <Recommendation
             className="recommendation"
-            image="https://playjoor.com/assets/avatar/matthew.png"
+            image="https://playjoor.com/assets/avatar/joe.jpg"
             name="Federico Cánovas Peña, MBA, PMP, B.Eng."
             paragraph={paragraph3}
             position="Executive Director - Digital Innovation at SLF"
@@ -36,7 +36,7 @@ export default class RecommendationList extends React.Component {
           <Bounce right>
           <Recommendation
             className="recommendation"
-            image="https://playjoor.com/assets/avatar/mark.png"
+            image="https://playjoor.com/assets/avatar/steve.jpg"
             name="Razvan Gazinschi"
             paragraph={paragraph2}
             position="Mobile Application Developer at SLF"
