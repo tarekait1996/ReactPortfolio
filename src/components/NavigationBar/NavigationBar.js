@@ -2,6 +2,8 @@ import React from "react";
 import "./NavigationBar.css";
 import logo from "./logo.png";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default class NavigationBar extends React.Component {
   constructor(props) {
@@ -195,7 +197,7 @@ export default class NavigationBar extends React.Component {
             }
             onClick={this.setToggleTopMenuClass}
             >
-              <i className="fas fa-bars" />
+              <FontAwesomeIcon className="faIcon" icon={faBars} />
             </section>
           </div>
         </nav>
