@@ -1,8 +1,22 @@
 .container {
+  background-image: url(./background.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-color: #464646;
   text-align: center;
   position: relative;
   height: 100vh;
+}
+.tintLayer1{
+  width:100%;
+  height:100vh;
   background: rgba(0, 0, 0, 0.7);
+  position: absolute;
 }
 .centeredContainer {
   position: absolute;

@@ -10,6 +10,7 @@ export default class InformationLayout extends React.Component {
   render() {
     return (
       <div id="main" className="container">
+        <div className = "tintLayer1"></div>
         <div className="centeredContainer">
           <h1 className="title">
             <Typist blink="true">
