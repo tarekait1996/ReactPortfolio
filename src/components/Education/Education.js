@@ -2,7 +2,10 @@ import React from "react";
 import "./Education.css";
 import EducationBox from "./EducationBox/EducationBox";
 import Roll from "react-reveal/Roll";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faSchool } from "@fortawesome/free-solid-svg-icons";
+import { faUniversity } from "@fortawesome/free-solid-svg-icons";
 export default class Education extends React.Component {
   render() {
     return (
@@ -20,7 +23,9 @@ export default class Education extends React.Component {
               Educationlocation="Montreal, QC, Canada"
               firstSentence="Dean's List 2018-2019"
               secondSentence="Recipient of Vigilant-DRW Software ICS award"
-            />
+            > 
+            <FontAwesomeIcon className="faEducIcon" icon={faGraduationCap} />
+            </EducationBox>
           </Roll>
           <Roll left>
             <EducationBox
@@ -31,7 +36,8 @@ export default class Education extends React.Component {
               Educationlocation="Montreal, QC, Canada"
               firstSentence="S.T.A.R. program (60+ hours of volunteering)"
               secondSentence=""
-            />
+            > <FontAwesomeIcon className="faEducIcon" icon={faSchool} />
+            </EducationBox>
           </Roll>
           <Roll right>
             <EducationBox
@@ -42,7 +48,7 @@ export default class Education extends React.Component {
               Educationlocation="Montreal, QC, Canada"
               firstSentence=""
               secondSentence=""
-            />
+            > <FontAwesomeIcon className="faEducIcon" icon={faUniversity} /> </EducationBox>
           </Roll>
         </div>
       </section>

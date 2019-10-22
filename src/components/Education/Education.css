@@ -7,6 +7,10 @@
     margin: 0 auto;
     padding: 50px 0px;
 }
+.faEducIcon {
+    fill: black;
+    color: black;
+}
 .education-item-container{
     
     max-width: 1200px;

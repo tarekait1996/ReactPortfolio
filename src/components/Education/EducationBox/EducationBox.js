@@ -1,12 +1,13 @@
 import React from "react";
 import "./EducationBox.css";
 
+
 export default class Education extends React.Component {
   render() {
     return (
       <div className="education-box">
         <div className="uniicon">
-          <i className={`${ this.props.iconName }`} />
+          {this.props.children}
         </div>
         <h4>{this.props.programTitle}</h4>
         <ul className="school-responsibility">
