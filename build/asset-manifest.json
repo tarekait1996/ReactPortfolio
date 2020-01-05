@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.65b4e45b.chunk.css",
+    "main.js": "/static/js/main.50420049.chunk.js",
+    "main.js.map": "/static/js/main.50420049.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.55fa3eb3.chunk.js": "/static/js/2.55fa3eb3.chunk.js",
+    "static/js/2.55fa3eb3.chunk.js.map": "/static/js/2.55fa3eb3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b283fbaf7c02a5304a586076bef84a56.js": "/precache-manifest.b283fbaf7c02a5304a586076bef84a56.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.65b4e45b.chunk.css.map": "/static/css/main.65b4e45b.chunk.css.map",
+    "static/media/InformationLayout.css": "/static/media/background.7cf5a0b8.jpg",
+    "static/media/devblockLogo.png": "/static/media/devblockLogo.4bbf87d9.png",
+    "static/media/htnPortfolio.png": "/static/media/htnPortfolio.0309ef0a.png",
+    "static/media/resume.pdf": "/static/media/resume.16b62e08.pdf",
+    "static/media/twatterLogo.png": "/static/media/twatterLogo.7934b4b0.png"
+  }
+}
