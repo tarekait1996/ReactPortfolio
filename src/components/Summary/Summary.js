@@ -1,6 +1,8 @@
 import React from "react";
 import "./Summary.css";
 import resume from "./resume.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Bounce from 'react-reveal/Bounce';
 
 export default class Summary extends React.Component {
@@ -17,28 +19,11 @@ export default class Summary extends React.Component {
               logic, science and technology to find solution for real life problem.
               I also wanted to automate my life to have more time to do things that I love.
             </p>
-            <div className="about-information">
-              <ul className="about-list">
-                <li className="about-list-item">
-                  <span className="about-list-item-fa">
-                    <i className="fa fa-envelope" />
-                  </span>
-                  tarekaithamouda@gmail.com
-                </li>
-                <li className="about-list-item">
-                  <span className="about-list-item-fa">
-                    <i className="fa fa-map-marker" />
-                  </span>
-                  Montreal, QC, Canada
-                </li>
-                <li className="about-list-item">
-                  <div className="btn">
-                    <a className="anchorNoStyle" href={resume} download>
-                      <span>Get My Resume</span>
-                    </a>
-                  </div>
-                </li>
-              </ul>
+            <br/>
+            <div className="btn">
+              <a className="anchorNoStyle" href={resume} download>
+                <span>Get My Resume</span>
+              </a>
             </div>
           </div>
 
@@ -49,29 +34,13 @@ export default class Summary extends React.Component {
                 <div className="info">
                   <div className="skill-info-content">
                     <div className="skill-name">Java</div>
-                    <div className="skill-year"> 5 years</div>
+                    <div className="skill-year"> 6 years</div>
                   </div>
                 </div>
                 <div className="progressBar">
                   <div
                     className="skill-percentage-visual"
-                    style={{ width: "90%" }}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="skills-individual">
-              <div className="skill-content">
-                <div className="info">
-                  <div className="skill-info-content">
-                    <div className="skill-name">IOS Development</div>
-                    <div className="skill-year"> 1.5 years</div>
-                  </div>
-                </div>
-                <div className="progressBar">
-                  <div
-                    className="skill-percentage-visual"
-                    style={{ width: "60%" }}
+                    style={{ width: "95%" }}
                   />
                 </div>
               </div>
@@ -81,6 +50,22 @@ export default class Summary extends React.Component {
                 <div className="info">
                   <div className="skill-info-content">
                     <div className="skill-name">Android Development</div>
+                    <div className="skill-year"> 2 years</div>
+                  </div>
+                </div>
+                <div className="progressBar">
+                  <div
+                    className="skill-percentage-visual"
+                    style={{ width: "75%" }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="skills-individual">
+              <div className="skill-content">
+                <div className="info">
+                  <div className="skill-info-content">
+                    <div className="skill-name">IOS Development</div>
                     <div className="skill-year"> 1.5 years</div>
                   </div>
                 </div>
@@ -113,13 +98,13 @@ export default class Summary extends React.Component {
                 <div className="info">
                   <div className="skill-info-content">
                     <div className="skill-name">Angular</div>
-                    <div className="skill-year"> .5 years</div>
+                    <div className="skill-year"> .25 years</div>
                   </div>
                 </div>
                 <div className="progressBar">
                   <div
                     className="skill-percentage-visual"
-                    style={{ width: "25%" }}
+                    style={{ width: "12.5%" }}
                   />
                 </div>
               </div>
