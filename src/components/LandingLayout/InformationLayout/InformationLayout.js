@@ -4,16 +4,16 @@ import Typist from "react-typist";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default class InformationLayout extends React.Component {
   render() {
     return (
-      <div id="main" className="container">
-        <div className="tintLayer1"></div>
-        <div className="centeredContainer">
-          <h1 className="title">
+      <div id="main" className="InformationLayout-container">
+        <div className="InformationLayout-tintLayer1"></div>
+        <div className="InformationLayout-centeredContainer">
+          <h1 className="InformationLayout-title">
             <Typist blink="true">
               <span>Hi,</span>
               <br />
@@ -22,27 +22,16 @@ export default class InformationLayout extends React.Component {
               <span>Nice to meet you! </span>
             </Typist>
           </h1>
-          <div className="description-Container">
-            <p className="description">
-              I am a
-              <br/>
-              Software Engineering Student,
-              <br />
-              a Mobile & Web Development enthusiast,
-              <br />
-              and I love Art, Food and Music.
-            </p>
-          </div>
           <hr />
-          <div className="socialContactsIcons">
+          <div className="InformationLayout-socialContactsIcons">
             <a href="https://github.com/tarekait1996">
-              <FontAwesomeIcon className="faIcon" icon={faGithub} />
+              <FontAwesomeIcon className="faIcon" icon={faGithub} size="2x"/>
+            </a>
+            <a href="https://medium.com/@tarekaithamouda">
+              <FontAwesomeIcon className="faIcon" icon={faMedium} size="2x"/>
             </a>
             <a href="https://www.linkedin.com/in/tarek-ait-hamouda/">
-              <FontAwesomeIcon className="faIcon" icon={faLinkedinIn} />
-            </a>
-            <a href="https://www.instagram.com/tarekait96/">
-              <FontAwesomeIcon className="faIcon" icon={faInstagram} />
+              <FontAwesomeIcon className="faIcon" icon={faLinkedinIn} size="2x" />
             </a>
           </div>
         </div>
@@ -55,14 +44,14 @@ export default class InformationLayout extends React.Component {
           duration={500}
           onSetActive={this.handleSetActive}
         >
-            <div className="icon-scroll">
-              <div className="mouse">
-                <div className="wheel"></div>
-              </div>
-              <div className="icon-arrows">
-                <span></span>
-              </div>
+          <div className="InformationLayout-icon-scroll">
+            <div className="InformationLayout-mouse">
+              <div className="InformationLayout-wheel"></div>
             </div>
+            <div className="InformationLayout-icon-arrows">
+              <span></span>
+            </div>
+          </div>
         </Link>
       </div>
     );

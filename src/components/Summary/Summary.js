@@ -12,11 +12,10 @@ export default class Summary extends React.Component {
             <h2 className="summary-title">Hi, I'm Tarek. Nice to meet you!</h2>
             <p className="summary-description">
               {" "}
-              Effective Student pursuing a Software Engineering degree committed
-              to learning, developing skills in Mobile App Development and team
-              contribution. Capable of self-managing and working independently
-              or collaborating with others on group projects. Successful in
-              quickly building skills and acquiring new knowledge.
+              I am a 3rd year Student at Concordia University in montreal, Canada. 
+              I originally got into programming because I loved the idea of mixing 
+              logic, science and technology to find solution for real life problem.
+              I also wanted to automate my life to have more time to do things that I love.
             </p>
             <div className="about-information">
               <ul className="about-list">
@@ -28,21 +27,9 @@ export default class Summary extends React.Component {
                 </li>
                 <li className="about-list-item">
                   <span className="about-list-item-fa">
-                    <i className="fa fa-phone" />
-                  </span>
-                  +1-514-475-5957
-                </li>
-                <li className="about-list-item">
-                  <span className="about-list-item-fa">
                     <i className="fa fa-map-marker" />
                   </span>
                   Montreal, QC, Canada
-                </li>
-                <li className="about-list-item">
-                  <span className="about-list-item-fa">
-                    <i className="fa fa-calendar" />
-                  </span>
-                  8 December 1996
                 </li>
                 <li className="about-list-item">
                   <div className="btn">

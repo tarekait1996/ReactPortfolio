@@ -2,6 +2,7 @@ import React from "react";
 import "./Experience-list.css";
 import ExperienceItem from "./../Experience-item/Experience-item";
 import sunlifeLogo from "./sunlife-logo.png";
+import amazonLogo from "./amazonLogo.png";
 import Bounce from 'react-reveal/Bounce';
 
 export default class Experience extends React.Component {
@@ -34,14 +35,14 @@ export default class Experience extends React.Component {
         <hr className="is-hr-summary" />
         <div className="experience-content">
           <div className="experiences-showcase-container">
-            <div className="ExperienceItemDiv">
+          <div className="ExperienceItemDiv">
             <Bounce left>
               <ExperienceItem
-                projectTitle="IOS Development (Co-op)"
-                projectDate = "August 2018 - December 2018"
-                projectSubTitle="SunLife Financial, Montreal"
-                projectDescription={stringIOS}
-                image={sunlifeLogo}
+                projectTitle="Software Developer Engineer (Co-op)"
+                projectDate = "June 2020 - September 2020"
+                projectSubTitle="Amazon, Vancouver"
+                projectDescription="Incoming"
+                image={amazonLogo}
               />
               </Bounce>
             </div>
@@ -49,13 +50,24 @@ export default class Experience extends React.Component {
             <Bounce right>
             <ExperienceItem
               className="ExperienceItemDiv"
-              projectTitle="Android Development (Co-op)"
+              projectTitle="Android Developer (Co-op)"
               projectDate = "May 2019 - September 2019"
               projectSubTitle="SunLife Financial, Montreal"
               projectDescription={stringAndroid}
               image={sunlifeLogo}
             />
             </Bounce>
+            </div>
+            <div className="ExperienceItemDiv">
+            <Bounce left>
+              <ExperienceItem
+                projectTitle="IOS Developer (Co-op)"
+                projectDate = "August 2018 - December 2018"
+                projectSubTitle="SunLife Financial, Montreal"
+                projectDescription={stringIOS}
+                image={sunlifeLogo}
+              />
+              </Bounce>
             </div>
           </div>
         </div>

@@ -24,6 +24,9 @@ export default class Experience extends React.Component {
             <p className="project-item-description-paragraph">
               {this.props.projectDescription}
             </p>
+            <p className="project-item-description-paragraph">
+              <b>Utilized: </b>{this.props.utilized}
+            </p>
             <div className="btn">
                     <a className="anchorNoStyle" href= {this.props.projectUrl}>
                       <span>See the Project</span>

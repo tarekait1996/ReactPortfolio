@@ -170,7 +170,7 @@ export default class NavigationBar extends React.Component {
               Testimonials
             </Link>
           </div>
-          <div className="NavBarAnchorContainer">
+          {/* <div className="NavBarAnchorContainer">
             <Link
               className={
                 this.state.fontColor === "black"
@@ -187,7 +187,7 @@ export default class NavigationBar extends React.Component {
             >
               Say Hi
             </Link>
-          </div>
+          </div> */}
           <div className="NavBarBurgerMenu">
             <section
             className={

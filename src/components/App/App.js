@@ -23,7 +23,7 @@ function App() {
         <Project/>
         <Education/>
         <RecommendationList/>
-        <Contact/>
+        {/* <Contact/> */}
         <Footer/>
       </div>
     </div>
