@@ -4,7 +4,7 @@ import Typist from "react-typist";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faMediumM } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default class InformationLayout extends React.Component {
@@ -24,11 +24,11 @@ export default class InformationLayout extends React.Component {
           </h1>
           <hr />
           <div className="InformationLayout-socialContactsIcons">
+          <a href="https://medium.com/@tarekaithamouda">
+              <FontAwesomeIcon className="faIcon" icon={faMediumM} size="2x"/>
+            </a>
             <a href="https://github.com/tarekait1996">
               <FontAwesomeIcon className="faIcon" icon={faGithub} size="2x"/>
-            </a>
-            <a href="https://medium.com/@tarekaithamouda">
-              <FontAwesomeIcon className="faIcon" icon={faMedium} size="2x"/>
             </a>
             <a href="https://www.linkedin.com/in/tarek-ait-hamouda/">
               <FontAwesomeIcon className="faIcon" icon={faLinkedinIn} size="2x" />
