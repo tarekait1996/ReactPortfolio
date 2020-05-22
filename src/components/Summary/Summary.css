@@ -110,3 +110,12 @@
   box-shadow: inset 0 0 0 0 #31302B;
   display: inline-block;
 }
+.summary-circle-avatar{
+  border-radius: 50%;
+  border: 5px solid black;
+  max-width: 200px;
+  max-height: 200px;
+}
+.summary-avatar-circle-container{
+  margin: 0 auto;
+}

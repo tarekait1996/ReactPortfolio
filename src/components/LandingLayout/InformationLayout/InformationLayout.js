@@ -30,7 +30,7 @@ export default class InformationLayout extends React.Component {
             <a href="https://github.com/tarekait1996">
               <FontAwesomeIcon className="faIcon" icon={faGithub} size="2x"/>
             </a>
-            <a href="https://www.linkedin.com/in/tarek-ait-hamouda/">
+            <a href="https://www.linkedin.com/in/tarekait/">
               <FontAwesomeIcon className="faIcon" icon={faLinkedinIn} size="2x" />
             </a>
           </div>

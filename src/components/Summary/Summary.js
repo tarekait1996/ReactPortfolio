@@ -1,6 +1,7 @@
 import React from "react";
 import "./Summary.css";
 import resume from "./resume.pdf";
+import profilePic from "./profilePic.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Bounce from 'react-reveal/Bounce';
@@ -8,26 +9,29 @@ import Bounce from 'react-reveal/Bounce';
 export default class Summary extends React.Component {
   render() {
     return (
-      <section id="about-me" className="summary-container">
-        <Bounce left>
-          <div className="summary-content">
-            <h2 className="summary-title">Hi, I'm Tarek. Nice to meet you!</h2>
-            <p className="summary-description">
-              {" "}
-              I am a 3rd year Student at Concordia University in montreal, Canada. 
-              I originally got into programming because I loved the idea of mixing 
-              logic, science and technology to find solution for real life problem.
-              I also wanted to automate my life to have more time to do things that I love.
-            </p>
-            <br/>
-            <div className="btn">
-              <a className="anchorNoStyle" href={resume} download>
-                <span>Get My Resume</span>
-              </a>
-            </div>
-          </div>
-
-          <div className="skills-year-content">
+      <section id="about-me">
+        <div className="summary-container">
+            <Bounce left>
+              <div className = "summary-avatar-circle-container"> 
+                <img src={profilePic} alt="" className="summary-circle-avatar" />
+              </div>
+              <div className="summary-content">
+                <h2 className="summary-title">Hi, I'm Tarek. Nice to meet you!</h2>
+                <p className="summary-description">
+                  {" "}
+                  I am a 3rd year Student at Concordia University in montreal, Canada. 
+                  I originally got into programming because I loved the idea of mixing 
+                  logic, science and technology to find solution for real life problem.
+                  I also wanted to automate my life to have more time to do things that I love.
+                </p>
+                <br/>
+                <div className="btn">
+                  <a className="anchorNoStyle" href={resume} download>
+                    <span>Get My Resume</span>
+                  </a>
+                </div>
+              </div>
+              <div className="skills-year-content">
             <h2 className="summary-title">Technical Skills</h2>
             <div className="skills-individual">
               <div className="skill-content">
@@ -110,7 +114,10 @@ export default class Summary extends React.Component {
               </div>
             </div>
           </div>
-        </Bounce>
+        
+              </Bounce>
+        </div>
+
       </section>
     );
   }

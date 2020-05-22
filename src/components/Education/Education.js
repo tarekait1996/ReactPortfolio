@@ -1,7 +1,7 @@
 import React from "react";
 import "./Education.css";
 import EducationBox from "./EducationBox/EducationBox";
-import Roll from "react-reveal/Roll";
+import Bounce from "react-reveal/Bounce";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faSchool } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +14,7 @@ export default class Education extends React.Component {
         <hr className="is-hr-summary" />
 
         <div className="education-content">
-          <Roll left>
+          <Bounce left>
             <EducationBox
               iconName="fas fa-university fa-2x"
               programTitle="Software Engineering Co-op"
@@ -26,8 +26,8 @@ export default class Education extends React.Component {
             > 
             <FontAwesomeIcon className="faEducIcon" icon={faGraduationCap} />
             </EducationBox>
-          </Roll>
-          <Roll left>
+          </Bounce>
+          <Bounce left>
             <EducationBox
               iconName="fas fa-graduation-cap fa-2x"
               programTitle="Pure and Applied Science"
@@ -38,8 +38,8 @@ export default class Education extends React.Component {
               secondSentence=""
             > <FontAwesomeIcon className="faEducIcon" icon={faSchool} />
             </EducationBox>
-          </Roll>
-          <Roll right>
+          </Bounce>
+          <Bounce right>
             <EducationBox
               iconName="fab fa-adobe fa-2x"
               programTitle="Photoshop Tutor"
@@ -49,7 +49,7 @@ export default class Education extends React.Component {
               firstSentence=""
               secondSentence=""
             > <FontAwesomeIcon className="faEducIcon" icon={faUniversity} /> </EducationBox>
-          </Roll>
+          </Bounce>
         </div>
       </section>
     );
