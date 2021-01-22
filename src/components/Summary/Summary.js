@@ -1,7 +1,7 @@
 import React from "react";
 import "./Summary.css";
 import resume from "./resume.pdf";
-import profilePic from "./profilePic.jpg"
+import profilePic from "./profilePic.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Bounce from 'react-reveal/Bounce';
